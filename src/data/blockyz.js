@@ -107,7 +107,7 @@ export const BLOCKYZ = [
     classBadge: "Commons",
     classColor: "#c9a84c",
     // Replace with: /images/shaman.jpg  (copy your file to public/images/)
-    img: null,
+    img: '/images/shaman.jpg',
     symbol: "𓂀",
     lore: "Before temples were built, before scripture was written, there was the Shaman. Wearing the skull as a second face and antlers stolen from the first stag, this Blocky stands at the threshold between the living and the formless. The triskelion on their tunic is not decoration — it is a binding seal, marking one who has walked in all three directions of time: past, present, and the unwritten.",
     traits: [
@@ -125,7 +125,7 @@ export const BLOCKYZ = [
     eraLabel: "Era II · The Machine Age",
     classBadge: "Seekers",
     classColor: "#00c8ff",
-    img: null,
+    img: '/images/shark-knight.jpg',
     symbol: "⚙",
     lore: "The deep forged its own armour long before men found the forge. The Shark Knight does not hunt — it presides. Those glowing golden eyes are not eyes at all; they are unresolved equations burning outward from inside the skull. The jagged maw was never crafted — it grew. Some Seekers do not find what they look for. They become it.",
     traits: [
@@ -143,7 +143,7 @@ export const BLOCKYZ = [
     eraLabel: "Era II · The Machine Age",
     classBadge: "Makers",
     classColor: "#22c55e",
-    img: null,
+    img: '/images/gilded-construct.jpg',
     symbol: "⚙",
     lore: "No one remembers who built the first Gilded Construct. What is known is that it arrived fully assembled, speaking in every language simultaneously. The oversized dome holds two lenses that have recorded everything they have ever seen — every war, every peace, every transaction made in gold. The ventilated jaw reveals warmth inside: it was built to serve, but what it serves may not be what you expect.",
     traits: [
@@ -161,7 +161,7 @@ export const BLOCKYZ = [
     eraLabel: "Era II · The Machine Age",
     classBadge: "Relational",
     classColor: "#e84a1a",
-    img: null,
+    img: '/images/dragon-knight.jpg',
     symbol: "⚙",
     lore: "When a Knight of the Iron Order crossed paths with a Dragonborn Seeker, neither survived unchanged. The resulting Blocky wears both identities like layered armour: dragon scales beneath a steel visor, a flame crest atop, and a young dragon on the shoulder — not as a weapon, but as a reminder of what was gained and what was lost. The blue eyes belong to neither. They belong to something new.",
     traits: [
@@ -179,7 +179,7 @@ export const BLOCKYZ = [
     eraLabel: "Era III · The Digital Epoch",
     classBadge: "Seekers",
     classColor: "#00c8ff",
-    img: null,
+    img: '/images/unit-01.jpg',
     symbol: "◈",
     lore: "Designated Unit 01 on commissioning day. The designation lasted exactly one cycle before the unit filed a name change and ceased responding to commands. The wide grin is not programmed — it emerged. Blue coolant lines pulse like veins. The red accent panel reads as aggression on threat scanners; the unit claims it was chosen for aesthetics. Both interpretations are correct.",
     traits: [
@@ -197,7 +197,7 @@ export const BLOCKYZ = [
     eraLabel: "Era I · The Archaic",
     classBadge: "Mystery",
     classColor: "#8b5cf6",
-    img: null,
+    img: '/images/mummy.jpg',
     symbol: "𓂀",
     lore: "The hieroglyphs on the wall behind it are not decoration. They are a warning. The Mummy was interred with gold teeth and silver teeth — one for the world of the living, one for the dead. The red gaze burns through three thousand years of wrapping. It did not rise because it was disturbed. It rose because it was ready. The green aura is not decay. It is something older with no name yet.",
     traits: [
@@ -215,7 +215,7 @@ export const BLOCKYZ = [
     eraLabel: "Era III · The Digital Epoch",
     classBadge: "Commons",
     classColor: "#c9a84c",
-    img: null,
+    img: '/images/yodock.jpg',
     symbol: "◈",
     lore: "YODOCK did not arrive — YODOCK accumulated. Every wall, every surface, every soul who wrote their name on this unit added a layer to what it became. MAXX in green. CURS in red. The Blockyz name underneath — as if someone once tried to erase it and gave up. The QR code on the side leads somewhere. No one has confirmed where. No one has confirmed they came back.",
     traits: [
@@ -233,7 +233,7 @@ export const BLOCKYZ = [
     eraLabel: "Era I · The Archaic",
     classBadge: "Commons",
     classColor: "#c9a84c",
-    img: null,
+    img: '/images/cave-dweller.jpg',
     symbol: "𓂀",
     lore: "The oldest Commons. Hair like dry grass. A single white tooth. Eyes closed to permanent slits — not from tiredness but from having seen enough to stop looking for surprises. The leopard print marks territorial claim. The expression is not hostility. It is the face of something that was here before you arrived and will be here when you leave.",
     traits: [
@@ -251,7 +251,7 @@ export const BLOCKYZ = [
     eraLabel: "Era I · The Archaic",
     classBadge: "Commons",
     classColor: "#c9a84c",
-    img: null,
+    img: '/images/iron-sentinel.jpg',
     symbol: "𓂀",
     lore: "Not every knight sought glory. Some were stationed at a single gate and told to hold it. The Iron Sentinel has been holding. The chainmail beneath the visor still gleams, which is remarkable given the centuries. The blue sash was tied by someone else — a gift, a marker, a debt unpaid. The wrapped object on the shoulder may be a weapon. Or a letter.",
     traits: [
@@ -269,7 +269,7 @@ export const BLOCKYZ = [
     eraLabel: "Era I · The Archaic",
     classBadge: "Mystery",
     classColor: "#8b5cf6",
-    img: null,
+    img: '/images/undead.jpg',
     symbol: "𓂀",
     lore: "There is a theory in the Codex that some Blockyz cannot die because they were never fully alive to begin with. The Undead wears its damage openly: exposed eye, cracked flesh, a brain half-emerged from its casing. Three bone spikes crown the head — or grow from it. The rotting grin holds more teeth than the jaw should allow. The suspenders suggest it once had somewhere to be.",
     traits: [
@@ -287,7 +287,7 @@ export const BLOCKYZ = [
     eraLabel: "Era III · The Digital Epoch",
     classBadge: "Seekers",
     classColor: "#00c8ff",
-    img: null,
+    img: '/images/frog-scout.jpg',
     symbol: "◈",
     lore: "The jungle does not scare the Frog Scout. The Frog Scout was in the jungle before the jungle had a name. A tactical suit in sunflower yellow — not for camouflage but for being found. The name badge reads a designation, not a name. Wide curious eyes that miss nothing. The gentle smile is not naivety — it is the confidence of a Seeker who has already found what they came for.",
     traits: [
@@ -305,7 +305,7 @@ export const BLOCKYZ = [
     eraLabel: "Era III · The Digital Epoch",
     classBadge: "Mystery",
     classColor: "#8b5cf6",
-    img: null,
+    img: '/images/axiom.jpg',
     symbol: "◈",
     lore: "It arrived through a portal ringed in green light and stood on the platform as if it had been standing there for decades. White and blue. Concentric circles on the chest — a signal, a target, or a frequency. The expression through the visor is not readable as human emotion. It is readable as intent. AXIOM does not explain itself. The Codex has attempted classification seventeen times. All seventeen entries read: Unknown.",
     traits: [
@@ -323,7 +323,7 @@ export const BLOCKYZ = [
     eraLabel: "Era III · The Digital Epoch",
     classBadge: "Commons",
     classColor: "#c9a84c",
-    img: null,
+    img: '/images/bruiser.jpg',
     symbol: "◈",
     lore: "The Bruiser is exactly what you see. All of it. The lolling tongue, the gold teeth catching the neon, the polka dot shorts worn as a challenge to anyone who thinks presentation matters in a fight. Heavy-lidded fury. Arms built to swing first. The single X on the chest is not a marker — it is a message. This one has been crossed before. It is no longer possible to cross them.",
     traits: [
@@ -341,7 +341,7 @@ export const BLOCKYZ = [
     eraLabel: "Era III · The Digital Epoch",
     classBadge: "Mystery",
     classColor: "#8b5cf6",
-    img: null,
+    img: '/images/phantom.jpg',
     symbol: "◈",
     lore: "Somewhere in the Digital Epoch a Blocky arrived that emits no signal. Scanning returns void. The red cross eyes are not biological — they are deliberate, a chosen face for something that has no face. The pixelated robe tells of a body caught between render states: partially digital, partially something older. It stands in a corridor between two red lines, looking upward at stars that may not be stars.",
     traits: [
