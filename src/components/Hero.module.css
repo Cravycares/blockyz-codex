@@ -1,0 +1,164 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 7rem 2rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(201,168,76,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(232,74,26,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 30% 40% at 80% 20%, rgba(0,200,255,0.04) 0%, transparent 60%);
+}
+
+.runes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.rune {
+  position: absolute;
+  bottom: -10vh;
+  font-family: 'Cinzel', serif;
+  color: rgba(201,168,76,0.06);
+  animation: runeFloat linear both;
+  user-select: none;
+}
+
+@keyframes runeFloat {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+  8%   { opacity: 1; }
+  90%  { opacity: 0.6; }
+  100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+}
+
+.eyebrow {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.45em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+  animation: fadeUp 1s ease both;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(3rem, 9vw, 7.5rem);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.01em;
+  background: linear-gradient(140deg, var(--gold-light) 0%, var(--gold) 35%, #7a5818 75%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 50px rgba(201,168,76,0.25));
+  margin-bottom: 0.4em;
+  animation: fadeUp 1s 0.15s ease both;
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  color: rgba(212,200,154,0.35);
+  letter-spacing: 0.35em;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 1s 0.3s ease both;
+  position: relative;
+  z-index: 1;
+}
+
+.divider {
+  width: 180px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 0 auto 2.5rem;
+  animation: fadeUp 1s 0.4s ease both;
+  position: relative;
+  z-index: 1;
+}
+
+.lore {
+  max-width: 580px;
+  font-size: 1rem;
+  line-height: 2;
+  color: rgba(212,200,154,0.6);
+  font-style: italic;
+  margin-bottom: 3rem;
+  animation: fadeUp 1s 0.55s ease both;
+  position: relative;
+  z-index: 1;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  animation: fadeUp 1s 0.7s ease both;
+  position: relative;
+  z-index: 1;
+}
+
+.btnPrimary {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  padding: 0.9rem 2.4rem;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: rgba(201,168,76,0.07);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnPrimary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s;
+  z-index: -1;
+}
+
+.btnPrimary:hover { color: var(--void); }
+.btnPrimary:hover::before { transform: scaleX(1); }
+
+.btnSecondary {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  padding: 0.9rem 2.4rem;
+  border: 1px solid rgba(212,200,154,0.18);
+  color: rgba(212,200,154,0.45);
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.btnSecondary:hover {
+  border-color: rgba(212,200,154,0.55);
+  color: var(--parchment);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

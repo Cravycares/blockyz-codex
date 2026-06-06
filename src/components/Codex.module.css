@@ -1,0 +1,157 @@
+.section {
+  padding: 7rem 2rem 6rem;
+  background: var(--stone);
+}
+
+.header { text-align: center; margin-bottom: 3.5rem; }
+
+.filterRow {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.3rem;
+  border: 1px solid rgba(201,168,76,0.18);
+  color: rgba(212,200,154,0.38);
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.filterBtn:hover,
+.filterBtn.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201,168,76,0.06);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 2px;
+  max-width: 1320px;
+  margin: 0 auto;
+  background: rgba(201,168,76,0.04);
+  border: 1px solid rgba(201,168,76,0.04);
+}
+
+.entry {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 1;
+  background: var(--stone);
+}
+
+.entryBg {
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entryImg {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.entry:hover .entryImg { transform: scale(1.05); }
+
+.entrySymbol {
+  font-size: 3.5rem;
+  color: rgba(201,168,76,0.12);
+  font-family: 'Cinzel', serif;
+  transition: transform 0.4s;
+}
+
+.entry:hover .entrySymbol { transform: scale(1.2); }
+
+.entryOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5,5,8,0.9) 0%, transparent 55%);
+  transition: opacity 0.3s;
+}
+
+.entry:hover .entryOverlay { opacity: 0; }
+
+.entryBottom {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 1rem; right: 1rem;
+}
+
+.entryTitle {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: rgba(212,200,154,0.75);
+}
+
+.entryHover {
+  position: absolute;
+  inset: 0;
+  background: rgba(5,5,8,0.92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+.entry:hover .entryHover { opacity: 1; }
+
+.eraBadge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.22em;
+  border: 1px solid;
+  padding: 0.18rem 0.55rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: inline-block;
+}
+
+.hoverName {
+  font-family: 'Cinzel', serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  color: var(--parchment);
+  margin-bottom: 0.25rem;
+}
+
+.hoverClass {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.hoverLore {
+  font-size: 0.7rem;
+  line-height: 1.65;
+  color: rgba(212,200,154,0.5);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.hoverCta {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+}

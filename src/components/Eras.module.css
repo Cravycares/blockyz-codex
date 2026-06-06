@@ -1,0 +1,94 @@
+.section {
+  padding: 7rem 2rem;
+  background: linear-gradient(to bottom, var(--void), var(--stone), var(--void));
+}
+
+.header { text-align: center; margin-bottom: 5rem; }
+
+.track {
+  display: flex;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.track::before {
+  content: '';
+  position: absolute;
+  top: 78px;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201,168,76,0.4), var(--gold), rgba(201,168,76,0.4), transparent);
+}
+
+.card {
+  flex: 1;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-6px); }
+
+.number {
+  position: absolute;
+  top: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 3rem;
+  color: rgba(201,168,76,0.05);
+  pointer-events: none;
+  user-select: none;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 auto 2.2rem;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s;
+}
+
+.card:hover .dot { transform: scale(1.6); }
+
+.label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.desc {
+  font-size: 0.82rem;
+  line-height: 1.85;
+  color: rgba(212,200,154,0.48);
+  font-style: italic;
+}
+
+.pieces {
+  margin-top: 1.6rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: rgba(201,168,76,0.25);
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .track { flex-direction: column; gap: 3rem; }
+  .track::before { display: none; }
+}

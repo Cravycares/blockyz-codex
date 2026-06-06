@@ -1,0 +1,27 @@
+.footer {
+  padding: 3.5rem 2rem;
+  text-align: center;
+}
+
+.divider {
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201,168,76,0.2), transparent);
+  margin: 0 auto 2.5rem;
+}
+
+.brand {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.85rem;
+  color: var(--gold-dim);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+}
+
+.note {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.28em;
+  color: rgba(212,200,154,0.15);
+  text-transform: uppercase;
+}

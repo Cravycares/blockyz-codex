@@ -1,0 +1,46 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.5rem;
+  transition: background 0.4s, border-color 0.4s;
+  border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+  background: rgba(5, 5, 8, 0.97);
+  border-bottom-color: rgba(201, 168, 76, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.brand {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+}
+
+.links a {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  color: rgba(212, 200, 154, 0.5);
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.links a:hover { color: var(--gold); }
+
+@media (max-width: 640px) {
+  .links { display: none; }
+  .brand { font-size: 0.75rem; }
+}

@@ -1,0 +1,110 @@
+.section {
+  padding: 7rem 2rem;
+  background: linear-gradient(to bottom, var(--void), #08050f, var(--void));
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(139,92,246,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.header { text-align: center; margin-bottom: 3rem; }
+
+.intro {
+  max-width: 680px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.95;
+  color: rgba(212,200,154,0.55);
+  font-style: italic;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  max-width: 980px;
+  margin: 0 auto;
+  background: rgba(139,92,246,0.08);
+  border: 1px solid rgba(139,92,246,0.08);
+}
+
+.card {
+  background: var(--void);
+  padding: 2.2rem 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 0.8rem;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.card:hover { background: rgba(139,92,246,0.035); }
+
+.confirmed { border-left: 2px solid rgba(232,74,26,0.25); }
+
+.confirmedBadge {
+  position: absolute;
+  top: 0.7rem; right: 0.8rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.2em;
+  color: var(--ember);
+  text-transform: uppercase;
+  border: 1px solid rgba(232,74,26,0.3);
+  padding: 0.15rem 0.4rem;
+}
+
+.inputBlock { text-align: center; }
+
+.comboClass {
+  font-family: 'Cinzel', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  color: rgba(212,200,154,0.28);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.comboName {
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  color: rgba(212,200,154,0.8);
+}
+
+.plus {
+  font-family: 'Cinzel Decorative', serif;
+  color: var(--gold-dim);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.arrow {
+  color: rgba(139,92,246,0.5);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.result .comboClass { color: rgba(232,74,26,0.4); }
+
+.sealed {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: rgba(212,200,154,0.18);
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: 1fr; }
+}
